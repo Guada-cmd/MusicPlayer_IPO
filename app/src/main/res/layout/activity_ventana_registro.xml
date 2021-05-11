@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_dos"
+    tools:context=".Presentacion.ventana_registro"
+    >
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:paddingTop="15dp"
+        android:text="@string/lblRegistroNuevoUsuario"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        app:srcCompat="@drawable/icono_perfil" />
+
+    <EditText
+        android:id="@+id/txtCambiar_nombre"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="3"
+        android:backgroundTintMode="add"
+        android:drawableLeft="@drawable/icono_usuario"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/Nombre"
+        />
+
+    <EditText
+        android:id="@+id/txtNombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="3"
+        android:drawableLeft="@drawable/icono_perfil"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/nombreUser" />
+
+    <EditText
+        android:id="@+id/txtCambiar_email"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="3"
+        android:drawableLeft="@drawable/icono_correo"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint="@string/Correo_electrónico" />
+
+    <EditText
+        android:id="@+id/txtCambiar_Password"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="3"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/icono_contrasena"
+        android:drawablePadding="8dp"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtConfirmarPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"
+        android:layout_weight="3"
+        android:drawableLeft="@drawable/icono_contrasena"
+        android:drawablePadding="8dp"
+        android:hint="@string/confirmarContraseña"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/txtCambiar_Telefono"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="3"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/icono_telefono"
+        android:drawablePadding="8dp"
+        android:hint="@string/numeroTelefono"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/txtCambiar_FechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="3"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/icono_calendario"
+        android:drawablePadding="8dp"
+        android:inputType="date"
+        android:hint="@string/FechaNacimiento"
+        />
+
+    <Button
+        android:id="@+id/btnFinalizarRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:backgroundTint="@color/pink"
+        android:onClick="oyente_btnRealizarRegistro"
+        android:textStyle="bold"
+        android:text="Guardar"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnVolverLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="7dp"
+        android:layout_weight="3"
+        android:backgroundTint="@color/pink"
+        android:onClick="oyente_btnVolver"
+        android:text="@string/VolverInicio"
+        android:textSize="16dp" />
+
+</LinearLayout>
