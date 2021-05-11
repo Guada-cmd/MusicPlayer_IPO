@@ -1,4 +1,4 @@
-package com.example.musicplayer_ipo;
+package com.example.musicplayer_ipo.Presentacion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -23,7 +23,8 @@ import android.widget.Toast;
 
 import com.example.musicplayer_ipo.Persistencia.PlayListDAO;
 import com.example.musicplayer_ipo.Persistencia.UsuarioDAO;
-import com.example.musicplayer_ipo.Presentacion.main_activity;
+import com.example.musicplayer_ipo.R;
+import com.example.musicplayer_ipo.ventana_menu_principal;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;

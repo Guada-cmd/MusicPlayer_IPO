@@ -47,7 +47,7 @@ public class ventana_artistas extends AppCompatActivity {
     private void inicializarAdaptador(){
 
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        this.lstArtistas = findViewById(R.id.lstPlayList);
+        this.lstArtistas = findViewById(R.id.lstArtistas);
 
         this.artistas = new ArrayList<Artista>();
         this.lstArtistas.setLayoutManager(mLayoutManager);

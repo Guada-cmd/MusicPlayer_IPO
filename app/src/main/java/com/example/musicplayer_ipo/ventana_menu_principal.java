@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.app.AlertDialog;
-import android.app.Presentation;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -18,7 +17,9 @@ import com.example.musicplayer_ipo.Persistencia.UsuarioDAO;
 import com.example.musicplayer_ipo.Presentacion.fragment_inicio;
 import com.example.musicplayer_ipo.Presentacion.fragment_perfil;
 import com.example.musicplayer_ipo.Presentacion.main_activity;
+import com.example.musicplayer_ipo.Presentacion.ventana_album;
 import com.example.musicplayer_ipo.Presentacion.ventana_artistas;
+import com.example.musicplayer_ipo.Presentacion.ventana_configuracion;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ventana_menu_principal extends AppCompatActivity {
@@ -114,15 +115,18 @@ public class ventana_menu_principal extends AppCompatActivity {
                     break;
                 case R.id.albumes:
 
-                    //Intent ventana_album = new Intent(menu_principal.this, com.example.musicplayer.Presentacion.ventana_album.class );
-                    //startActivity(ventana_album);
+                    Intent ventana_albumes = new Intent(ventana_menu_principal.this,
+                            ventana_album.class);
+                    startActivity(ventana_albumes);
 
                     break;
                 case R.id.canciones:
 
-                    //Intent ventana_canciones = new Intent(menu_principal.this, com.example.musicplayer.Presentacion.ventana_canciones.class );
-                    //ventana_canciones.putExtra("identificador_album", "");
-                    //startActivity(ventana_canciones);
+                    Intent ventana_cancion = new Intent(ventana_menu_principal.this,
+                            ventana_canciones.class);
+
+                    ventana_cancion.putExtra("identificador_album", "");
+                    startActivity(ventana_cancion);
 
                     break;
                 case R.id.perfil:

@@ -10,11 +10,11 @@
         android:id="@+id/lblSeleccionado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Seleccionar artista:"
+        android:text="Seleccionar cancion:"
         android:textSize="18sp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lstArtistas"
+        android:id="@+id/lstPlayList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="5dp"

@@ -11,10 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicPlayer_IPO.NoActionBar">
-        <activity android:name=".ventana_configuracion"></activity>
+        <activity android:name=".ventana_canciones"></activity>
+        <activity android:name=".Presentacion.ventana_album" />
+        <activity android:name=".Presentacion.ventana_configuracion" />
         <activity android:name=".Presentacion.ventana_detalles_artistas" />
         <activity android:name=".Presentacion.ventana_artistas" />
-
         <activity android:name=".Presentacion.ventana_registro" />
         <activity android:name=".ventana_menu_principal" />
         <activity
