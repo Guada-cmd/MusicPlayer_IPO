@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.app.AlertDialog;
+import android.app.Presentation;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -19,6 +18,7 @@ import com.example.musicplayer_ipo.Persistencia.UsuarioDAO;
 import com.example.musicplayer_ipo.Presentacion.fragment_inicio;
 import com.example.musicplayer_ipo.Presentacion.fragment_perfil;
 import com.example.musicplayer_ipo.Presentacion.main_activity;
+import com.example.musicplayer_ipo.Presentacion.ventana_artistas;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ventana_menu_principal extends AppCompatActivity {
@@ -106,8 +106,10 @@ public class ventana_menu_principal extends AppCompatActivity {
                     break;
                 case R.id.artistas:
 
-                    //Intent ventana_artistas = new Intent(menu_principal.this, com.example.musicplayer.Presentacion.ventana_artistas.class );
-                    //startActivity(ventana_artistas);
+                    Intent ventana_artista = new Intent(ventana_menu_principal.this,
+                            ventana_artistas.class);
+
+                    startActivity(ventana_artista);
 
                     break;
                 case R.id.albumes:
@@ -206,7 +208,7 @@ public class ventana_menu_principal extends AppCompatActivity {
 
             case R.id.cerrar_sesion:
 
-                Intent cerrar_sesion = new Intent(ventana_menu_principal.this, main_activity.class );
+                Intent cerrar_sesion = new Intent(ventana_menu_principal.this, main_activity.class);
                 startActivity(cerrar_sesion);
                 break;
         }
