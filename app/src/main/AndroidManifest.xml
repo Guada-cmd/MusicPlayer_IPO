@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.musicplayer_ipo">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicPlayer_IPO.NoActionBar">
-        <activity android:name=".Presentacion.ventana_detalles_artistas"></activity>
+        <activity android:name=".ventana_configuracion"></activity>
+        <activity android:name=".Presentacion.ventana_detalles_artistas" />
         <activity android:name=".Presentacion.ventana_artistas" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.MusicPlayer_IPO.NoActionBar.NoActionBar" />
+
         <activity android:name=".Presentacion.ventana_registro" />
         <activity android:name=".ventana_menu_principal" />
         <activity

@@ -211,6 +211,13 @@ public class ventana_menu_principal extends AppCompatActivity {
                 Intent cerrar_sesion = new Intent(ventana_menu_principal.this, main_activity.class);
                 startActivity(cerrar_sesion);
                 break;
+
+            case R.id.action_configuracon:
+
+                Intent configuracion = new Intent(ventana_menu_principal.this, ventana_configuracion.class);
+                configuracion.putExtra("nombre_usuario_registrado", this.nombre_usuario_registrado);
+                startActivity(configuracion);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

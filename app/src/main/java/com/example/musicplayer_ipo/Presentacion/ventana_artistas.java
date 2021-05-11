@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.widget.Toolbar;
 
 import com.example.musicplayer_ipo.Adaptadores.AdaptadorListaArtista;
 import com.example.musicplayer_ipo.Dominio.Artista;
@@ -24,6 +25,8 @@ public class ventana_artistas extends AppCompatActivity {
 
     private String [] id_artistas;
     private ArtistaDAO gestor_artista = new ArtistaDAO();
+    
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
