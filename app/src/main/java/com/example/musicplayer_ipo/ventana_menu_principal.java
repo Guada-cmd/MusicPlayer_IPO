@@ -4,9 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -15,6 +18,7 @@ import com.example.musicplayer_ipo.Dominio.Usuario;
 import com.example.musicplayer_ipo.Persistencia.UsuarioDAO;
 import com.example.musicplayer_ipo.Presentacion.fragment_inicio;
 import com.example.musicplayer_ipo.Presentacion.fragment_perfil;
+import com.example.musicplayer_ipo.Presentacion.main_activity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ventana_menu_principal extends AppCompatActivity {
@@ -189,12 +193,23 @@ public class ventana_menu_principal extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        int id = item.getItemId();
+        switch (item.getItemId()){
 
-        if (id == R.id.action_settings) {
-            return true;
+            case R.id.informacion_app:
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Acerca de...");
+                builder.setMessage("Aplicación creada por María Jesús y Guadalupe");
+                builder.setPositiveButton("OK",null);builder.create();
+                builder.show();
+                break;
+
+            case R.id.cerrar_sesion:
+
+                Intent cerrar_sesion = new Intent(ventana_menu_principal.this, main_activity.class );
+                startActivity(cerrar_sesion);
+                break;
         }
-
         return super.onOptionsItemSelected(item);
     }
 

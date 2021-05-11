@@ -19,8 +19,17 @@
     <style name="Theme.MusicPlayer_IPO.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="bottomNavigationStyle">@style/navegation_style</item>
     </style>
 
     <style name="Theme.MusicPlayer_IPO.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.MusicPlayer_IPO.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.MusicPlayer_IPO.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MusicPlayer_IPO.NoActionBar.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MusicPlayer_IPO.NoActionBar.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
 </resources>

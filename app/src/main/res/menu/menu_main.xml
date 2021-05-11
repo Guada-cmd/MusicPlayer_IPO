@@ -1,10 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.musicplayer_ipo.Presentacion.main_activity">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/action_configuracon"
+        android:title="@string/action_configuracon"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/cerrar_sesion"
+        android:title="@string/cerrar_sesion"
+        app:showAsAction="never"></item>
+
+    <item
+        android:id="@+id/informacion_app"
+        android:icon="@drawable/icono_acercade"
+        android:title="@string/info"
+        app:showAsAction="always"></item>
+
 </menu>
