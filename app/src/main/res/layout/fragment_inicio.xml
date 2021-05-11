@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="25dp"
+    android:paddingBottom="3dp"
+    tools:context=".Presentacion.fragment_inicio">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/lblTituloArtistaInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="292dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/artistas"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/hsvArtistas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsvArtistas"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/lblTituloAlbumInicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTituloArtistaInicio"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imgArtistaQueen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_queen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaEdurne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_edurne"
+
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaQueen"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaQueen"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaQueen" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaAvicii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_avicii"
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaEdurne"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaEdurne"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaEdurne" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaHarryStyles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_harry_styles"
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaAvicii"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaAvicii"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaAvicii" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaBeckyG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_beckyg"
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaHarryStyles"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaHarryStyles"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaHarryStyles" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaFifthHarmony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_fifth_harmony"
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaBeckyG"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaBeckyG"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaBeckyG" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaAllTimeLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_all_time_low"
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaFifthHarmony"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaFifthHarmony"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaFifthHarmony" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaRaphael"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_rafael"
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaAllTimeLow"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaAllTimeLow"
+                    app:layout_constraintStart_toEndOf="@id/imgArtistaAllTimeLow"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaAllTimeLow" />
+
+                <ImageButton
+                    android:id="@+id/imgArtistaMelendi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/artista_melendi"
+                    app:layout_constraintEnd_toEndOf="@id/imgArtistaRaphael"
+                    app:layout_constraintEnd_toStartOf="@id/imgArtistaRaphael"
+                    app:layout_constraintTop_toTopOf="@id/imgArtistaRaphael" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/lblTituloAlbumInicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/albumes"
+            android:textColor="@color/pink"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/hsvAlbumes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hsvArtistas"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <HorizontalScrollView
+            android:id="@+id/hsvAlbumes"
+            android:layout_width="wrap_content"
+            android:layout_height="450px"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lblTituloAlbumInicio"
+            tools:ignore="MissingConstraints">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:id="@+id/imgAlbumAllTimeLow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_all_time_low"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="160dp" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumAvicii"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_avicii"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumAllTimeLow"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumAllTimeLow"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumAllTimeLow" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumBeckyg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_beckyg"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumAvicii"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumAvicii"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumAvicii"
+                    tools:layout_editor_absoluteX="160dp" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumEdurne"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_edurne"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumBeckyg"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumBeckyg"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumBeckyg"
+                    tools:layout_editor_absoluteX="160dp" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumFifthHarmony"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_fifth_harmony"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumEdurne"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumEdurne"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumEdurne"
+                    tools:layout_editor_absoluteX="160dp" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumHarryStyles"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_harry_styles"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumFifthHarmony"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumFifthHarmony"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumFifthHarmony"
+                    tools:layout_editor_absoluteX="160dp" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumMelendi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="4dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_melendi"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumHarryStyles"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumHarryStyles"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumHarryStyles" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumQueen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_queen"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumRaphael"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumRaphael"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumRaphael"
+                    tools:layout_editor_absoluteX="160dp" />
+
+                <ImageButton
+                    android:id="@+id/imgAlbumRaphael"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/album_raphael"
+                    app:layout_constraintEnd_toEndOf="@id/imgAlbumMelendi"
+                    app:layout_constraintEnd_toStartOf="@id/imgAlbumMelendi"
+                    app:layout_constraintTop_toTopOf="@id/imgAlbumMelendi" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btnPlayListFavoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="Mis Favoritos"
+            app:layout_constraintBottom_toTopOf="@+id/hsvArtistas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
