@@ -35,7 +35,9 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
 
-            android:elevation="8dp"
+            style="@style/navegation_style"
+
+            android:elevation="10dp"
             app:labelVisibilityMode="labeled"
 
             app:layout_constraintBottom_toBottomOf="parent"

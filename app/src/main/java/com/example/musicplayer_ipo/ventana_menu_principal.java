@@ -1,21 +1,20 @@
 package com.example.musicplayer_ipo;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Toast;
 
 import com.example.musicplayer_ipo.Dominio.Usuario;
 import com.example.musicplayer_ipo.Persistencia.UsuarioDAO;
 import com.example.musicplayer_ipo.Presentacion.fragment_inicio;
+import com.example.musicplayer_ipo.Presentacion.fragment_perfil;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ventana_menu_principal extends AppCompatActivity {
@@ -123,10 +122,10 @@ public class ventana_menu_principal extends AppCompatActivity {
                 case R.id.perfil:
 
                     usuario_sistema = inicializarDatosPerfil();
-                    //Bitmap imagen_perfil = inicializarImagenPerfil();
+                    Bitmap imagen_perfil = inicializarImagenPerfil();
 
-                    //getSupportFragmentManager().beginTransaction()
-                     //       .replace(R.id.framgment_layout, new fragment_perfil(usuario_sistema)).commit();
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.fragmen_inicio, new fragment_perfil(usuario_sistema)).commit();
 
 
                     break;
