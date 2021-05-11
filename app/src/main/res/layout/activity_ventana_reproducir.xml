@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0E0C0C"
+    android:background="#000000"
     tools:context=".Presentacion.ventana_reproducir">
 
     <ImageView
@@ -21,26 +21,29 @@
         android:id="@+id/btnPlay"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="15dp"
         android:layout_marginBottom="132dp"
         android:background="@drawable/icono_reproducir"
         android:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnDetener"
-        app:layout_constraintHorizontal_bias="0.878"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFavoritos"
         app:layout_constraintTop_toBottomOf="@+id/txtNombreCancionMusica" />
 
     <Button
         android:id="@+id/btnDetener"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginStart="264dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="132dp"
         android:background="@drawable/icono_detener_musica"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay"
         app:layout_constraintTop_toBottomOf="@+id/txtNombreCancionMusica"
         app:layout_constraintVertical_bias="0.492" />
 
@@ -61,7 +64,7 @@
         android:id="@+id/btnFavoritos"
         android:layout_width="92dp"
         android:layout_height="87dp"
-        android:layout_marginStart="79dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="132dp"
