@@ -49,8 +49,8 @@ public class fragment_inicio extends Fragment {
             @Override
             public void onClick(View v) {
 
-                //Intent ventana_playlist = new Intent(getActivity(), ventana_playlist_favoritos.class);
-                //startActivity(ventana_playlist);
+                Intent ventana_playlist = new Intent(getActivity(), ventana_playlist_favoritos.class);
+                startActivity(ventana_playlist);
 
             }
         });
