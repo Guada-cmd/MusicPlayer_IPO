@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MusicPlayer_IPO">
+        android:theme="@style/Theme.MusicPlayer_IPO.NoActionBar">
+        <activity android:name=".ventana_menu_principal"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".main_activity"
             android:label="@string/app_name"
             android:theme="@style/Theme.MusicPlayer_IPO.NoActionBar">
             <intent-filter>
