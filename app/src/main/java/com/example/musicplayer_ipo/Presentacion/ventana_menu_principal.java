@@ -1,4 +1,4 @@
-package com.example.musicplayer_ipo;
+package com.example.musicplayer_ipo.Presentacion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,12 +14,7 @@ import android.widget.Toast;
 
 import com.example.musicplayer_ipo.Dominio.Usuario;
 import com.example.musicplayer_ipo.Persistencia.UsuarioDAO;
-import com.example.musicplayer_ipo.Presentacion.fragment_inicio;
-import com.example.musicplayer_ipo.Presentacion.fragment_perfil;
-import com.example.musicplayer_ipo.Presentacion.main_activity;
-import com.example.musicplayer_ipo.Presentacion.ventana_album;
-import com.example.musicplayer_ipo.Presentacion.ventana_artistas;
-import com.example.musicplayer_ipo.Presentacion.ventana_configuracion;
+import com.example.musicplayer_ipo.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ventana_menu_principal extends AppCompatActivity {

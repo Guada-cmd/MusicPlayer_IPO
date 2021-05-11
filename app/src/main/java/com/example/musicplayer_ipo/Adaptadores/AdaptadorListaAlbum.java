@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.musicplayer_ipo.Dominio.Album;
 import com.example.musicplayer_ipo.Interfaz.OnItemSelectedListener;
 import com.example.musicplayer_ipo.R;
-import com.example.musicplayer_ipo.ventana_canciones;
+import com.example.musicplayer_ipo.Presentacion.ventana_canciones;
 
 import java.util.ArrayList;
 

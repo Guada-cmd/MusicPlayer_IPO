@@ -1,4 +1,4 @@
-package com.example.musicplayer_ipo;
+package com.example.musicplayer_ipo.Presentacion;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -13,6 +13,7 @@ import com.example.musicplayer_ipo.Adaptadores.AdaptadorListaCancion;
 import com.example.musicplayer_ipo.Dominio.Cancion;
 import com.example.musicplayer_ipo.Persistencia.AlbumDAO;
 import com.example.musicplayer_ipo.Persistencia.CancionDAO;
+import com.example.musicplayer_ipo.R;
 
 import java.util.ArrayList;
 

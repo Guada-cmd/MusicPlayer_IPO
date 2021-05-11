@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.musicplayer_ipo.Dominio.Cancion;
 import com.example.musicplayer_ipo.Interfaz.OnItemSelectedListener;
 import com.example.musicplayer_ipo.R;
+import com.example.musicplayer_ipo.Presentacion.ventana_reproducir;
 
 import java.util.ArrayList;
 
@@ -76,9 +77,9 @@ public class AdaptadorListaCancion extends RecyclerView.Adapter<AdaptadorListaCa
                 if(holder.lblNombre.getText().toString() != "No disponible" ||
                         canciones.get(position).getImagenCancion() != null){
 
-                    //Intent reproducir_audio = new Intent(holder.itemView.getContext(), ventana_reproducir.class);
-                    //reproducir_audio.putExtra("identificador_cancion", canciones.get(position).getIdCancion());
-                    //holder.itemView.getContext().startActivity(reproducir_audio);
+                    Intent reproducir_audio = new Intent(holder.itemView.getContext(), ventana_reproducir.class);
+                    reproducir_audio.putExtra("identificador_cancion", canciones.get(position).getIdCancion());
+                    holder.itemView.getContext().startActivity(reproducir_audio);
 
                 }
             }

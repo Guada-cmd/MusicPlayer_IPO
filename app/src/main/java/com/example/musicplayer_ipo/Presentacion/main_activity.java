@@ -12,7 +12,6 @@ import android.view.View;
 import android.widget.EditText;
 import com.example.musicplayer_ipo.Persistencia.UsuarioDAO;
 import com.example.musicplayer_ipo.R;
-import com.example.musicplayer_ipo.ventana_menu_principal;
 
 public class main_activity extends AppCompatActivity {
 
