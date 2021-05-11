@@ -12,7 +12,7 @@
         <activity android:name=".Presentacion.ventana_registro"></activity>
         <activity android:name=".ventana_menu_principal" />
         <activity
-            android:name=".main_activity"
+            android:name=".Presentacion.main_activity"
             android:label="@string/app_name"
             android:theme="@style/Theme.MusicPlayer_IPO.NoActionBar">
             <intent-filter>

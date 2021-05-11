@@ -11,5 +11,17 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <string name="lblRegistroNuevoUsuario">Registro nuevo usuario</string>
+    <string name="Nombre">Nombre</string>
+    <string name="nombreUser">Nombre usuario</string>
+    <string name="Correo_electrónico">Correo electrónico</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="confirmarContraseña">Confirma contraseña</string>
+    <string name="numeroTelefono">Número teléfono</string>
+    <string name="FechaNacimiento">Fecha de Nacimiento</string>
+    <string name="VolverInicio">Volver </string>
+
+    <string name="nombreUsuario">Nombre usuario</string>
+    <string name="IniciarSesión">Iniciar sesión</string>
+    <string name="Registrarse">Crear cuenta</string>
 
 </resources>
